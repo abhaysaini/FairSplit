@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "77240101508",
+    "project_id": "fairsplit-56632",
+    "storage_bucket": "fairsplit-56632.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77240101508:android:ce8f961b2eb952c784b0d1",
+        "android_client_info": {
+          "package_name": "com.example.fairsplit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77240101508-1rpteocnnh1hrm2j1sqpdgjtkql54d61.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fairsplit",
+            "certificate_hash": "8eefb2bdff86360fe996add41a10e9ddcfd99de3"
+          }
+        },
+        {
+          "client_id": "77240101508-ovvgrmu6h93bujqies02s0lur7rl9210.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcGFZin0gHWtGeSQlLmjOH94BZILvgF5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77240101508-f7iocts4kh8u6e497ci83i1denbeapqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.fairsplit.R
 import com.example.fairsplit.databinding.ActivityMainBinding
+import com.example.fairsplit.ui.groupCreation.GroupCreateFragment
 import com.example.fairsplit.ui.login.LoginActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -26,14 +28,16 @@ class MainActivity : AppCompatActivity() {
             .requestEmail().build()
         googleClient = GoogleSignIn.getClient(this, gso)
         binding.logoutButton.setOnClickListener {
-            firebaseAuth.signOut()
             googleClient.signOut().addOnCompleteListener {
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }
         }
 
-        binding.tvEmail.text = intent.getStringExtra("email_id")
-        binding.tvName.text = intent.getStringExtra("name")
+
+        binding.btnCreateGroup.setOnClickListener {
+            GroupCreateFragment().show(supportFragmentManager,"create_group_dialog")
+        }
+
     }
 }

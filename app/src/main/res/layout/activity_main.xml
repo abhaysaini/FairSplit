@@ -4,43 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.MainActivity">
 
-    <TextView
-        android:id="@+id/tv_email"
+    <Button
+        android:id="@+id/btn_create_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_rect"
+        android:backgroundTint="@color/app_blue"
+        android:text="Create Group"
+        android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        android:layout_margin="16dp"
-        android:padding="8dp"
+        android:layout_marginTop="100dp"
         />
-    <TextView
-        android:id="@+id/tv_name"
+    <Button
+        android:id="@+id/btn_join_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_rect"
+        android:backgroundTint="@color/app_blue"
+        android:text="Join Group"
+        android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_email"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="18sp"
-        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/btn_create_group"
         android:layout_margin="16dp"
-        android:padding="8dp"
         />
-
 
     <Button
         android:id="@+id/logout_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_rect"
+        android:backgroundTint="@color/app_blue"
         android:text="Logout"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_join_group"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="150dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
